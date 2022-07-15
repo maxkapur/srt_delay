@@ -1,0 +1,8 @@
+name: runtests
+on: [push]
+jobs:
+  runtests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python3 test.py
